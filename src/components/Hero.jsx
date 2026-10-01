@@ -64,6 +64,36 @@ const Hero = () => {
               animation-play-state: paused;
             }
 
+            @media (max-width: 640px) {
+              .hero-skills-marquee {
+                padding: 0.75rem 0;
+              }
+
+              .hero-skills-track {
+                animation-duration: 22s;
+              }
+
+              .hero-skills-item {
+                padding: 0 1rem;
+                font-size: 0.7rem;
+              }
+
+              .hero-skills-item::after {
+                margin-left: 2rem;
+              }
+            }
+
+            @media (min-width: 641px) and (max-width: 1024px) {
+              .hero-skills-track {
+                animation-duration: 25s;
+              }
+
+              .hero-skills-item {
+                padding: 0 1.25rem;
+                font-size: 0.8rem;
+              }
+            }
+
             @media (prefers-reduced-motion: reduce) {
               .hero-skills-track {
                 animation: none;
