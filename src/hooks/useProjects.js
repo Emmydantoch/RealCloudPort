@@ -27,6 +27,13 @@ export const ProjectsProvider = ({ children }) => {
           ])
         );
         setProjects(allProjects);
+
+        const firstPopulatedMode = categories.findIndex(
+          (_, mode) => allProjects[mode].length > 0
+        );
+        if (firstPopulatedMode !== -1) {
+          setCurrentMode(firstPopulatedMode);
+        }
       } catch (error) {
         console.error('Error loading projects from Django:', error);
       } finally {

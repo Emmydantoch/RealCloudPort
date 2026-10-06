@@ -41,7 +41,7 @@ const Projects = () => {
             </p>
           ) : currentProjects.length === 0 ? (
             <p className="col-span-3 text-center text-zinc-500 py-12">
-              No {modeNames} projects yet.
+              No {modeNames[currentMode]} projects yet.
             </p>
           ) : (
             currentProjects.map((project) => (
