@@ -12,15 +12,15 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-24 bg-zinc-900">
+    <section id="about" className="responsive-section py-24 bg-zinc-900">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center mb-16">About Me</h2>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <h2 className="section-heading text-5xl font-bold text-center mb-16">About Me</h2>
+        <div className="about-layout grid md:grid-cols-2 gap-16 items-center">
           <div className="rounded-3xl overflow-hidden">
             <img 
               src="/images/my pics update.jpeg" 
               alt="Profile" 
-              className="w-full"
+              className="about-photo w-full"
             />
           </div>
           <div className="space-y-8 text-lg text-zinc-300">

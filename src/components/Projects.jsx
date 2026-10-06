@@ -5,10 +5,10 @@ const Projects = () => {
   const { currentMode, modeNames, switchMode, currentProjects, loading } = useProjects();
 
   return (
-    <section id="projects" className="py-24 bg-zinc-900">
+    <section id="projects" className="responsive-section py-24 bg-zinc-900">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-12 text-center">
-          <h2 className="text-5xl font-bold">My Projects</h2>
+          <h2 className="section-heading text-5xl font-bold">My Projects</h2>
           <div
             role="tablist"
             aria-label="Project categories"
@@ -34,7 +34,7 @@ const Projects = () => {
           </div>
         </div>
         
-        <div id="project-list" role="tabpanel" className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div id="project-list" role="tabpanel" className="project-grid grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {loading ? (
             <p className="col-span-3 text-center text-zinc-500 py-12">
               Loading projects...
@@ -65,6 +65,7 @@ const Projects = () => {
                   {project.technologies && (
                     <div className="text-sm text-pink-400 mb-6">{project.technologies}</div>
                   )}
+                  <div className="project-actions">
                   {project.project_url && (
                     <a 
                       href={project.project_url} 
@@ -80,11 +81,12 @@ const Projects = () => {
                       href={project.youtube_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-2xl text-sm font-medium transition ml-3"
+                      className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-2xl text-sm font-medium transition"
                     >
                       Watch Video <i className="fa-brands fa-youtube"></i>
                     </a>
                   )}
+                  </div>
                 </div>
               </div>
             ))

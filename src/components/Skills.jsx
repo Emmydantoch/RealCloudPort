@@ -2,10 +2,10 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 bg-zinc-950">
+    <section id="skills" className="responsive-section py-24 bg-zinc-950">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center mb-16">Skills & Experience</h2>
-        <div className="grid md:grid-cols-2 gap-12">
+        <h2 className="section-heading text-5xl font-bold text-center mb-16">Skills & Experience</h2>
+        <div className="skills-layout grid md:grid-cols-2 gap-12">
           <div>
             <h3 className="text-3xl font-semibold mb-8">Expertise</h3>
             <div className="space-y-8">

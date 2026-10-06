@@ -10,8 +10,8 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero-bg min-h-screen flex items-center relative">
-      <div className="max-w-6xl mx-auto px-6 text-center pt-20">
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-none tracking-tighter">
+      <div className="hero-content max-w-6xl mx-auto px-6 text-center pt-20">
+        <h1 className="hero-title text-6xl md:text-8xl font-bold mb-6 leading-none tracking-tighter">
           I Create <span className="gradient-text">Beautiful</span> Digital Experiences
         </h1>
         <p className="text-2xl text-zinc-200 max-w-3xl mx-auto mb-12">

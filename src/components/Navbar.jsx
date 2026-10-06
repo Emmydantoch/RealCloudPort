@@ -5,9 +5,9 @@ const Navbar = () => {
   const { isLight, toggleTheme } = useTheme();
 
   return (
-    <nav className="fixed top-0 w-full z-50 glass py-5">
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="text-3xl font-bold tracking-tighter">Daniel Emmanuel</div>
+    <nav className="site-navbar fixed top-0 w-full z-50 glass py-5">
+      <div className="site-nav-inner max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div className="site-brand text-3xl font-bold tracking-tighter">Daniel Emmanuel</div>
         <div className="flex items-center gap-8 text-sm font-medium nav-items">
           <a href="#home" className="hover:text-pink-400 transition">Home</a>
           <a href="#about" className="hover:text-pink-400 transition">About</a>
