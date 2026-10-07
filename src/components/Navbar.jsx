@@ -12,7 +12,7 @@ const Navbar = () => {
           <a href="#home" className="hover:text-pink-400 transition">Home</a>
           <a href="#about" className="hover:text-pink-400 transition">About</a>
           <a href="#skills" className="hover:text-pink-400 transition">Skills</a>
-          <a href="#projects" className="hover:text-pink-400 transition">Work</a>
+          <a href="#projects" className="hover:text-pink-400 transition">Works</a>
           
           {/* Theme Toggle */}
           <button 
