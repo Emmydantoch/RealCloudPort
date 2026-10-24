@@ -18,7 +18,7 @@ const About = () => {
         <div className="about-layout grid md:grid-cols-2 gap-16 items-center">
           <div className="rounded-3xl overflow-hidden">
             <img 
-              src="/images/mynewpass.jpeg"
+              src="./images/mynewpass.jpeg"
               alt="Profile" 
               className="about-photo w-full"
             />
