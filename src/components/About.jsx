@@ -17,7 +17,7 @@ const About = () => {
         <h2 className="section-heading text-5xl font-bold text-center mb-16">About Me</h2>
         <div className="about-layout grid md:grid-cols-2 gap-16 items-center">
           <div className="rounded-3xl overflow-hidden">
-            {/* profile pic */}
+            {/* profile picture */}
             <img 
               src="./images/mynewpass.jpeg"
               alt="Profile" 
