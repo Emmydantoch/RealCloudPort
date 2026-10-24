@@ -17,10 +17,11 @@ const About = () => {
         <h2 className="section-heading text-5xl font-bold text-center mb-16">About Me</h2>
         <div className="about-layout grid md:grid-cols-2 gap-16 items-center">
           <div className="rounded-3xl overflow-hidden">
+
             <img 
               src="./images/mynewpass.jpeg"
               alt="Profile" 
-              className="about-photo w-full"
+              className="about-photo w-[20rem]"
             />
           </div>
           <div className="space-y-8 text-lg text-zinc-300">
